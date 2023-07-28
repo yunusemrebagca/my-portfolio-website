@@ -1,0 +1,17 @@
+.div {
+  max-width: 700px;
+  margin-inline: auto;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center;
+  font-size: 2rem;
+
+  margin-block: 20rem 15rem;
+
+  strong {
+    transition: color 300ms ease;
+    &:hover {
+      color: var(--secondary-clr);
+    }
+  }
+}

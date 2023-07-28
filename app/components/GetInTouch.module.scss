@@ -1,0 +1,25 @@
+.div {
+  margin-top: 12rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h4 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+  }
+  p {
+    font-weight: 300;
+  }
+  div {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    display: flex;
+    gap: 3rem;
+  }
+  svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}

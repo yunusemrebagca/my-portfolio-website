@@ -1,28 +1,68 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Container } from "../styled-components/reusable";
 import styles from "./Navbar.module.scss";
 import Link from "next/link";
 import clsx from "clsx";
 
 export const Navbar = () => {
-  const [style, setStyle] = useState(false);
+  const [isScrolling, setIsScrolling] = useState(false);
 
-  const isScrolling = function () {
+  useEffect(() => {
     if (window.scrollY > 50) {
-      setStyle(true);
-    } else {
-      setStyle(false);
+      setIsScrolling(true);
+    }
+    const isScrollingFunction = function () {
+      if (window.scrollY > 50) {
+        setIsScrolling(true);
+      } else {
+        setIsScrolling(false);
+      }
+    };
+    window.addEventListener("scroll", isScrollingFunction);
+
+    return () => {
+      window.removeEventListener("scroll", isScrollingFunction);
+    };
+  }, []);
+
+  const [show, setShow] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const controlNavbar = () => {
+    if (typeof window !== "undefined") {
+      if (window.scrollY > lastScrollY) {
+        // if scroll down hide the navbar
+        setShow(true);
+      } else {
+        // if scroll up show the navbar
+        setShow(false);
+      }
+
+      // remember current page location to use in the next move
+      setLastScrollY(window.scrollY);
     }
   };
 
-  if (typeof window !== "undefined") {
-    window.addEventListener("scroll", isScrolling);
-  }
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", controlNavbar);
+
+      // cleanup function
+      return () => {
+        window.removeEventListener("scroll", controlNavbar);
+      };
+    }
+  }, [lastScrollY]);
 
   return (
-    <div className={clsx(styles.sticky, { [styles.scroll]: style })}>
+    <div
+      className={clsx(styles.sticky, {
+        [styles.scroll]: isScrolling,
+        [styles.goingDown]: show,
+      })}
+    >
       <Container>
         <div className={styles.div}>
           <Link href={"/"}>

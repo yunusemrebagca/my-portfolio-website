@@ -12,6 +12,8 @@ export const Project = defineDocumentType(() => ({
       of: { type: "string" },
     },
     imageUrl: { type: "string", required: true },
+    livePreview: { type: "string", required: true },
+    githubRepo: { type: "string", required: true },
   },
   contentType: "mdx",
   computedFields: {

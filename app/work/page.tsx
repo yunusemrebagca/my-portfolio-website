@@ -2,7 +2,7 @@ import { Container } from "../styled-components/reusable";
 
 export default function Works() {
   return (
-    <Container>
+    <Container mt={"12rem"}>
       <p>work</p>
     </Container>
   );

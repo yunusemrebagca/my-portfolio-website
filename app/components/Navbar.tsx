@@ -1,18 +1,22 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import { Container } from "../styled-components/reusable";
 import styles from "./Navbar.module.scss";
 import Link from "next/link";
 import clsx from "clsx";
+import { usePathname } from "next/navigation";
 
 export const Navbar = () => {
   const [isScrolling, setIsScrolling] = useState(false);
 
   useEffect(() => {
-    if (window.scrollY > 50) {
-      setIsScrolling(true);
+    if (typeof window !== "undefined") {
+      if (window.scrollY > 50) {
+        setIsScrolling(true);
+      }
     }
+
     const isScrollingFunction = function () {
       if (window.scrollY > 50) {
         setIsScrolling(true);
@@ -27,7 +31,7 @@ export const Navbar = () => {
     };
   }, []);
 
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
 
   const controlNavbar = () => {
@@ -56,6 +60,8 @@ export const Navbar = () => {
     }
   }, [lastScrollY]);
 
+  const pathname = usePathname();
+
   return (
     <div
       className={clsx(styles.sticky, {
@@ -77,15 +83,35 @@ export const Navbar = () => {
           <div className={styles.links}>
             <ul>
               <li>
-                <Link href={"/"}>Home</Link>
+                <Link
+                  href={"/"}
+                  className={pathname == "/" ? styles.active__link : ""}
+                >
+                  Home
+                </Link>
               </li>
               <li>
-                <Link href={"/work"}>Work</Link>
+                <Link
+                  href={"/work"}
+                  className={pathname == "/work" ? styles.active__link : ""}
+                >
+                  Work
+                </Link>
               </li>
               <li>
-                <Link href={"/about"}>About Me</Link>
+                <Link
+                  href={"/about"}
+                  className={pathname == "/about" ? styles.active__link : ""}
+                >
+                  About Me
+                </Link>
               </li>
-              <button className={styles.button}>
+              <button
+                className={clsx(
+                  pathname == "/contact" && styles.active__button,
+                  styles.button
+                )}
+              >
                 <Link href={"/contact"}>Contact</Link>
               </button>
             </ul>

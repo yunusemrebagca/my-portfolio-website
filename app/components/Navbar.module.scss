@@ -4,6 +4,15 @@
   justify-content: space-between;
 }
 
+.active__link {
+  color: var(--secondary-clr);
+}
+
+.active__button {
+  color: var(--secondary-clr) !important;
+  border: 1px solid var(--secondary-clr) !important;
+}
+
 .sticky {
   top: 0;
   left: 0;

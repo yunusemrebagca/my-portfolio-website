@@ -18,14 +18,14 @@ export const mailOptions = {
   to: email,
 };
 
-const CONTACT_MESSAGE_FIELDS = {
+const CONTACT_MESSAGE_FIELDS: any = {
   name: "Name",
   email: "Email",
   subject: "Subject",
   message: "Message",
 };
 
-const generateEmailContent = (data) => {
+const generateEmailContent = (data: any) => {
   const stringData = Object.entries(data).reduce(
     (str, [key, val]) =>
       (str += `${CONTACT_MESSAGE_FIELDS[key]}: \n${val} \n \n`),
@@ -41,7 +41,7 @@ const generateEmailContent = (data) => {
   };
 };
 
-export async function POST(req) {
+export async function POST(req: Request) {
   const data = await req.json();
   console.log(data);
   if (!data || !data.name || !data.email || !data.subject || !data.message) {

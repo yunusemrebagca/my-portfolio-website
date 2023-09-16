@@ -1,9 +1,25 @@
 .div {
   margin-top: 8rem;
+  @media (max-width: 1000px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
   h2 {
     font-weight: 300;
     font-size: 2rem;
     margin-top: 4rem;
-    margin-bottom: 6rem;
+    @media (max-width: 1000px) {
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+    }
+    margin-bottom: 2rem;
+    padding-inline: 2rem;
   }
+}
+
+.selectedWorks {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }

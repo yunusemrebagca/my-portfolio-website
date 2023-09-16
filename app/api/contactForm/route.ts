@@ -43,7 +43,6 @@ const generateEmailContent = (data: any) => {
 
 export async function POST(req: Request) {
   const data = await req.json();
-  console.log(data);
   if (!data || !data.name || !data.email || !data.subject || !data.message) {
     return NextResponse.json({ error: "Error" }, { status: 400 });
   }

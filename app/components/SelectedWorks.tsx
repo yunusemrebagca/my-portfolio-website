@@ -11,13 +11,15 @@ export const SelectedWorks = () => {
         <h2>
           Selected <b>Works</b>
         </h2>
-        {allProjects.slice(0, 3).map((project: Project, idx: number) => (
-          <SelectedWorksCard
-            key={idx}
-            reverse={idx % 2 == 0 ? false : true}
-            project={project}
-          />
-        ))}
+        <div className={styles.selectedWorks}>
+          {allProjects.slice(0, 3).map((project: Project, idx: number) => (
+            <SelectedWorksCard
+              key={idx}
+              reverse={idx % 2 == 0 ? false : true}
+              project={project}
+            />
+          ))}
+        </div>
       </div>
     </Container>
   );

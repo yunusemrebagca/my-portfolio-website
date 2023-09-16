@@ -64,9 +64,6 @@ export default function ContactForm() {
     }
   };
 
-  console.log(state);
-  console.log(touched);
-
   return (
     <form className={styles.contact__form}>
       <label

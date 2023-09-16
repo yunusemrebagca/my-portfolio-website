@@ -45,6 +45,36 @@
   }
 }
 
+.side__menu {
+  transform: translateX(0%);
+  transition: all 300ms ease;
+}
+
+.side__menu.active {
+  transform: translateX(100%);
+}
+
+.hamburger__img {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.nav {
+  background-color: rgba(20, 59, 98, 0.673);
+  position: fixed;
+
+  top: 0;
+  height: 100vh;
+  right: 0;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 4rem;
+  }
+}
+
 #hide {
   display: inline-block;
   max-width: 0%;
@@ -55,6 +85,9 @@
 }
 
 .links {
+  @media (max-width: 768px) {
+    display: none;
+  }
   ul {
     display: flex;
     justify-content: space-between;
@@ -83,6 +116,11 @@
       }
     }
   }
+}
+
+.img {
+  filter: invert(100%) sepia(99%) saturate(6%) hue-rotate(250deg)
+    brightness(105%) contrast(100%);
 }
 
 .button {

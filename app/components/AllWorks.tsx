@@ -6,7 +6,7 @@ import { SelectedWorksCard } from "./SelectedWorksCard";
 
 export const AllWorks = () => {
   return (
-    <Container>
+    <Container mt="12rem">
       <div className={styles.div}>
         <h2>
           All <b>Works</b>

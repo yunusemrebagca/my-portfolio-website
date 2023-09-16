@@ -1,4 +1,8 @@
 .div {
+  @media (max-width: 800px) {
+    margin-top: 4rem;
+  }
+
   display: flex;
   justify-content: space-around;
   gap: 4rem;
@@ -18,10 +22,12 @@
 }
 
 .img {
-  object-fit: contain;
-  border-radius: 16px;
+  @media (max-width: 800px) {
+    max-width: 100%;
+  }
 
-  max-width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
 }
 .card__right {
   max-width: 400px;
@@ -35,6 +41,9 @@
   }
 
   .description {
+    @media (max-width: 800px) {
+      font-size: 1.5rem;
+    }
     font-size: 2rem;
     font-weight: 300;
   }

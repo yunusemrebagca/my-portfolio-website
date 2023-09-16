@@ -6,6 +6,11 @@
   text-align: center;
   font-size: 2rem;
 
+  @media (max-width: 800px) {
+    font-size: 1.5rem;
+    margin-block: 15rem 10rem;
+  }
+
   margin-block: 20rem 15rem;
 
   strong {

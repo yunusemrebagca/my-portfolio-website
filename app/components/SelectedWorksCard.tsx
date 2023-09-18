@@ -35,18 +35,12 @@ export const SelectedWorksCard = ({
               <p>View Work</p> <img src="/images/icon.svg" alt="" />
             </button>
           </Link>
-          <Link
-            href={
-              "https://github.com/yunusemrebagca/nextjs-mdx-blog-project-with-contentlayer"
-            }
-          >
+          <Link href={`${project.githubRepo}`}>
             <img className={styles.icon} src="/images/github.png" alt="" />
           </Link>
           <Link
             className={styles.preview__button}
-            href={
-              "https://github.com/yunusemrebagca/nextjs-mdx-blog-project-with-contentlayer"
-            }
+            href={`${project.livePreview}`}
           >
             <img className={styles.icon} src="/images/web.png" alt="" />
             <p>Live Preview</p>

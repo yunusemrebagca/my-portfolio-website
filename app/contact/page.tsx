@@ -1,7 +1,13 @@
 import { Container } from "../styled-components/reusable";
 import ContactForm from "./ContactForm";
 import styles from "./page.module.scss";
+import { Metadata } from "next";
 
+export const generateMetadata = (): Metadata => {
+  return {
+    title: "Contact",
+  };
+};
 export default function Contact() {
   return (
     <Container mt="12rem">

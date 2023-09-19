@@ -23,7 +23,9 @@ export const SelectedWorksCard = ({
       ></Image>
       <div className={styles.card__right}>
         <h3>{project.title}</h3>
-        <p className={styles.description}>{project.description}</p>
+        <Link href={`/work/${project._raw.flattenedPath.split("/").pop()}`}>
+          <p className={styles.description}>{project.description}</p>
+        </Link>
         <p className={styles.category}>
           {project.tags?.map((tag, idx) => (
             <button key={idx}>{tag}</button>

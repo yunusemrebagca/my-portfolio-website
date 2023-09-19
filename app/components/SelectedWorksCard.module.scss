@@ -9,7 +9,6 @@
   margin-top: 6rem;
   @media (max-width: 1000px) {
     flex-direction: column;
-    padding-inline: 2rem;
     gap: 2rem;
   }
 }
@@ -43,6 +42,10 @@
   .description {
     @media (max-width: 800px) {
       font-size: 1.5rem;
+    }
+    transition: color 300ms ease;
+    &:hover {
+      color: var(--secondary-clr);
     }
     font-size: 2rem;
     font-weight: 300;

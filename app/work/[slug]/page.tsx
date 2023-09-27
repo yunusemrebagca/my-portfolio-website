@@ -14,8 +14,11 @@ export async function generateStaticParams() {
 }
 
 export const generateMetadata = ({ params }: Props): Metadata => {
+  const title =
+    `${params.slug}`.charAt(0).toUpperCase() + `${params.slug}`.slice(1);
+
   return {
-    title: `${params.slug}`,
+    title: `${title}`,
   };
 };
 

@@ -9,7 +9,11 @@ import s from "./page.module.scss";
 
 const mdxComponents: MDXComponents = {
   // Override the default <a> element to use the next/link component.
-  a: ({ href, children }) => <Link href={href as string}>{children}</Link>,
+  a: ({ href, children }) => (
+    <Link className={s.a} href={href as string}>
+      {children}
+    </Link>
+  ),
   p: ({ children }) => <p className={s.paragraph}>{children}</p>,
   h2: ({ children }) => <h2 className={s.h2}>{children}</h2>,
   h3: ({ children }) => <h3 className={s.h3}>{children}</h3>,

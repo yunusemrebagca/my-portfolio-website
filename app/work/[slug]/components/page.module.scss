@@ -17,9 +17,10 @@
 }
 
 .a {
-  color: purple;
+  transition: all ease 300ms;
+  padding-right: 1rem;
   &:hover {
-    text-decoration: underline;
+    color: purple;
   }
 }
 

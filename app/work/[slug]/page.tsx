@@ -15,14 +15,19 @@ export async function generateStaticParams() {
 
 export const generateMetadata = (
   { params }: Props,
-  allProjects: Project
+  allProjects: Project[]
 ): Metadata => {
   const title =
     `${params.slug}`.charAt(0).toUpperCase() + `${params.slug}`.slice(1);
 
+  const currentProject = allProjects.find(
+    (project: Project) =>
+      project._raw.flattenedPath.split("/").pop() === params.slug
+  );
+  const description = `${currentProject?.description}`;
   return {
     title: `${title}`,
-    description: `${allProjects.description}`,
+    description,
   };
 };
 

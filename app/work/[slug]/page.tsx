@@ -13,10 +13,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export const generateMetadata = (
-  { params }: Props,
-  allProjects: Project[]
-): Metadata => {
+export const generateMetadata = ({ params }: Props): Metadata => {
   const title =
     `${params.slug}`.charAt(0).toUpperCase() + `${params.slug}`.slice(1);
 

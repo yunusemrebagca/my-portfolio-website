@@ -15,7 +15,8 @@ const font = Work_Sans({
 export const metadata: Metadata = {
   title: { default: "Yunus Emre Bagca", template: "%s | Yunus Emre Bagca" },
 
-  description: "my personal website",
+  description:
+    "I am a self-taught frontend developer with a passion for creating responsive and dynamic user interfaces using React and other web technologies",
 };
 
 export default function RootLayout({

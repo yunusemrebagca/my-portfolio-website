@@ -6,11 +6,11 @@ export const Hero = () => {
   return (
     <Container>
       <div className={styles.div}>
-        <p>
+        <h1>
           I am a self-taught <strong>frontend developer</strong> with a passion
           for creating <strong>responsive</strong> and dynamic user interfaces
           using <strong>React</strong> and other web technologies
-        </p>
+        </h1>
       </div>
     </Container>
   );

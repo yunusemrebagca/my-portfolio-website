@@ -7,6 +7,8 @@ import Image from "next/image";
 export const generateMetadata = (): Metadata => {
   return {
     title: "About",
+    description:
+      "About - I am a self-taught frontend developer with a passion for creating responsive and dynamic user interfaces using React and other web technologies",
   };
 };
 export default function About() {

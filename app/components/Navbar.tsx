@@ -135,14 +135,16 @@ export const Navbar = () => {
                     About Me
                   </Link>
                 </li>
-                <button
-                  className={clsx(
-                    pathname == "/contact" && styles.active__button,
-                    styles.button
-                  )}
-                >
-                  <Link href={"/contact"}>Contact</Link>
-                </button>
+                <Link href={"/contact"}>
+                  <button
+                    className={clsx(
+                      pathname == "/contact" && styles.active__button,
+                      styles.button
+                    )}
+                  >
+                    Contact
+                  </button>
+                </Link>
               </ul>
             </div>
 

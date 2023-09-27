@@ -1,4 +1,4 @@
-import { allProjects } from "contentlayer/generated";
+import { Project, allProjects } from "contentlayer/generated";
 import { notFound } from "next/navigation";
 import MDXComponent from "./components/MDXComponent";
 import { Container } from "@/app/styled-components/reusable";
@@ -13,12 +13,16 @@ export async function generateStaticParams() {
   }));
 }
 
-export const generateMetadata = ({ params }: Props): Metadata => {
+export const generateMetadata = (
+  { params }: Props,
+  allProjects: Project
+): Metadata => {
   const title =
     `${params.slug}`.charAt(0).toUpperCase() + `${params.slug}`.slice(1);
 
   return {
     title: `${title}`,
+    description: `${allProjects.description}`,
   };
 };
 

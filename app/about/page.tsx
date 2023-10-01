@@ -31,9 +31,9 @@ export default function About() {
         </div>
         <div className={styles.about__text}>
           <p>
-            Hello! I'm Yunus Emre Bagca, a passionate and driven Junior Frontend
-            Developer with a strong commitment to crafting exceptional web
-            experiences. My journey in the world of web development has been
+            Hello! I&apos;m Yunus Emre Bagca, a passionate and driven Junior
+            Frontend Developer with a strong commitment to crafting exceptional
+            web experiences. My journey in the world of web development has been
             fueled by a genuine love for creating user-centric interfaces that
             seamlessly blend form and function.
           </p>
@@ -41,17 +41,18 @@ export default function About() {
           <p>
             My adventure in the world of coding began with a fascination for how
             websites worked and a determination to make my mark in the digital
-            landscape. Over time, I've honed my skills, and today, I specialize
-            in using Next.js and TypeScript to build robust, efficient, and
-            dynamic web applications.
+            landscape. Over time, I&apos;ve honed my skills, and today, I
+            specialize in using Next.js and TypeScript to build robust,
+            efficient, and dynamic web applications.
           </p>
           <h2>Expertise</h2>
           <ul>
             <li>
-              <strong>Next.js Enthusiast:</strong> I'm deeply passionate about
-              Next.js and its capabilities for building fast, SEO-friendly, and
-              highly scalable web applications. I've harnessed its power to
-              bring ideas to life and create delightful online experiences.
+              <strong>Next.js Enthusiast:</strong> I&apos;m deeply passionate
+              about Next.js and its capabilities for building fast,
+              SEO-friendly, and highly scalable web applications. I&apos;ve
+              harnessed its power to bring ideas to life and create delightful
+              online experiences.
             </li>
             <li>
               <strong>TypeScript Aficionado:</strong> TypeScript has become my
@@ -60,34 +61,34 @@ export default function About() {
               projects.
             </li>
             <li>
-              <strong>Core Web Technologies:</strong> I'm proficient in HTML,
-              CSS, and JavaScript, the fundamental building blocks of the web.
-              These languages allow me to translate designs into reality and
-              ensure seamless user interactions.
+              <strong>Core Web Technologies:</strong> I&apos;m proficient in
+              HTML, CSS, and JavaScript, the fundamental building blocks of the
+              web. These languages allow me to translate designs into reality
+              and ensure seamless user interactions.
             </li>
           </ul>
           <h2>Philosophy</h2>
           <p>
             I firmly believe that web development is not just about writing
-            code; it's about solving problems and enhancing the lives of users.
-            My goal is to bridge the gap between design and functionality,
-            creating digital spaces that are not only visually appealing but
-            also intuitive and efficient.
+            code; it&apos;s about solving problems and enhancing the lives of
+            users. My goal is to bridge the gap between design and
+            functionality, creating digital spaces that are not only visually
+            appealing but also intuitive and efficient.
           </p>
           <h2>Collaboration</h2>
           <p>
-            I'm a firm believer in the power of collaboration. I thrive in
+            I&apos;m a firm believer in the power of collaboration. I thrive in
             dynamic team environments where diverse perspectives come together
             to turn ideas into reality. Working together, we can create
             something truly amazing.
           </p>
-          <h2>What's Next?</h2>
+          <h2>What&apos;s Next?</h2>
           <p>
-            I'm excited to continue my journey in the field of frontend
+            I&apos;m excited to continue my journey in the field of frontend
             development, pushing boundaries, and delivering exceptional digital
-            experiences. Whether you're interested in discussing projects,
+            experiences. Whether you&apos;re interested in discussing projects,
             exploring collaboration opportunities, or simply geeking out about
-            web development, I'd love to connect.
+            web development, I&apos;d love to connect.
           </p>
         </div>
       </div>

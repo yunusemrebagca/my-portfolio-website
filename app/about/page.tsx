@@ -29,7 +29,7 @@ export default function About() {
               creating <strong>responsive</strong> and dynamic user interfaces
               using <strong>React</strong> and other web technologies
             </p>
-            <a href="/deneme__projects.pdf">
+            <a href="/cv.pdf">
               <button>Download CV</button>
             </a>
           </div>

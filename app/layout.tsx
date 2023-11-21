@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: { default: "Yunus Emre Bagca", template: "%s | Yunus Emre Bagca" },
 
   description:
-    "I am a self-taught frontend developer with a passion for creating responsive and dynamic user interfaces using React and other web technologies",
+    "I am a frontend developer with a passion for creating responsive and dynamic user interfaces using React and other web technologies",
   verification: {
     google: "zWne5ULETfErpQuBYsnvJQ-ngJ0QCI5w6Zlbb6mwZuI",
   },

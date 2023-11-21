@@ -23,17 +23,22 @@ export default function About() {
             height={400}
             width={500}
           ></Image>
-          <p>
-            I am a self-taught <strong>frontend developer</strong> with a
-            passion for creating <strong>responsive</strong> and dynamic user
-            interfaces using <strong>React</strong> and other web technologies
-          </p>
+          <div>
+            <p>
+              I am a <strong>frontend developer</strong> with a passion for
+              creating <strong>responsive</strong> and dynamic user interfaces
+              using <strong>React</strong> and other web technologies
+            </p>
+            <a href="/deneme__projects.pdf">
+              <button>Download CV</button>
+            </a>
+          </div>
         </div>
         <div className={styles.about__text}>
           <p>
-            Hello! I&apos;m Yunus Emre Bagca, a passionate and driven Junior
-            Frontend Developer with a strong commitment to crafting exceptional
-            web experiences. My journey in the world of web development has been
+            Hello! I&apos;m Yunus Emre Bagca, a passionate and driven Frontend
+            Developer with a strong commitment to crafting exceptional web
+            experiences. My journey in the world of web development has been
             fueled by a genuine love for creating user-centric interfaces that
             seamlessly blend form and function.
           </p>

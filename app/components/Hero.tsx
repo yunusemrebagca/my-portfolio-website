@@ -7,9 +7,9 @@ export const Hero = () => {
     <Container>
       <div className={styles.div}>
         <h1>
-          I am a self-taught <strong>frontend developer</strong> with a passion
-          for creating <strong>responsive</strong> and dynamic user interfaces
-          using <strong>React</strong> and other web technologies
+          I am a <strong>frontend developer</strong> with a passion for creating{" "}
+          <strong>responsive</strong> and dynamic user interfaces using{" "}
+          <strong>React</strong> and other web technologies
         </h1>
       </div>
     </Container>

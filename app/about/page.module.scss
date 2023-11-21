@@ -21,6 +21,15 @@
       flex-direction: column;
       gap: 1rem;
     }
+    button {
+      color: black;
+      cursor: pointer;
+      transition: color 300ms ease;
+      margin-bottom: 2rem;
+    }
+    button:hover {
+      color: var(--secondary-clr);
+    }
     img {
       object-fit: contain;
     }

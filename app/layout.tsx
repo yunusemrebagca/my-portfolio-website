@@ -12,6 +12,13 @@ const font = Work_Sans({
   weight: ["100", "200", "300", "400", "700"],
 });
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Yunus Emre Bagca",
+  url: "https://yunusemrebagca.com",
+};
+
 export const metadata: Metadata = {
   title: { default: "Yunus Emre Bagca", template: "%s | Yunus Emre Bagca" },
 
@@ -29,6 +36,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={font.className}>
         <StyledComponentsRegistry>
           <Navbar></Navbar>

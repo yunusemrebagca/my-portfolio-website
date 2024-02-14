@@ -12,8 +12,14 @@
   }
 
   @media (max-width: 800px) {
-    font-size: 1.5rem;
-    margin-block: 15rem 10rem;
+    margin-block: 12rem 10rem;
+  }
+
+  @media (max-width: 400px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+    margin-block: 12rem 10rem;
   }
 
   margin-block: 20rem 15rem;

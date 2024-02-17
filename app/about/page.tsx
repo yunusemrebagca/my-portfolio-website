@@ -50,26 +50,26 @@ export default function About() {
             specialize in using Next.js and TypeScript to build robust,
             efficient, and dynamic web applications.
           </p>
-          <h2>Expertise</h2>
+          <h2>Technical Skillset</h2>
           <ul>
             <li>
-              <strong>Next.js Enthusiast:</strong> I&apos;m deeply passionate
-              about Next.js and its capabilities for building fast,
-              SEO-friendly, and highly scalable web applications. I&apos;ve
-              harnessed its power to bring ideas to life and create delightful
-              online experiences.
+              <strong>Next.js :</strong> Possess a deep understanding of Next.js
+              and its capabilities for crafting high-performance, SEO-optimized,
+              and highly scalable web applications. Leverage its power to
+              deliver exceptional user experiences and bring innovative ideas to
+              life.
             </li>
             <li>
-              <strong>TypeScript Aficionado:</strong> TypeScript has become my
-              trusted companion in writing clean, error-free code. I embrace its
-              static typing and appreciate the safety it brings to large-scale
-              projects.
+              <strong>TypeScript :</strong> Utilize TypeScript extensively to
+              write clean, maintainable, and error-free code. Appreciate the
+              enhanced accuracy and security it brings to large-scale projects.
             </li>
             <li>
-              <strong>Core Web Technologies:</strong> I&apos;m proficient in
-              HTML, CSS, and JavaScript, the fundamental building blocks of the
-              web. These languages allow me to translate designs into reality
-              and ensure seamless user interactions.
+              <strong>Core Web Technologies:</strong> Demonstrate strong
+              proficiency in the fundamental building blocks of the web: HTML,
+              CSS, and JavaScript. Utilize these languages to seamlessly
+              translate design concepts into functional and interactive user
+              experiences.
             </li>
           </ul>
           <h2>Philosophy</h2>

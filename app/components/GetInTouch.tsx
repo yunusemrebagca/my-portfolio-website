@@ -12,7 +12,7 @@ export const GetInTouch = () => {
         </h4>
         <p>So that we can talk more about...</p>
         <div>
-          <a href="mailto: a7yunusemre34@gmail.com">
+          <a href="mailto: yunusemrebagca@gmail.com">
             <img src="/images/Mail.svg" alt="mail logo" />
           </a>
           <a

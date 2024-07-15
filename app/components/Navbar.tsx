@@ -39,7 +39,7 @@ export const Navbar = () => {
       window.removeEventListener("scroll", isScrollingFunction);
     };
   }, []);
-
+  
   const [show, setShow] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -108,7 +108,6 @@ export const Navbar = () => {
                 </p>
               </div>
             </Link>
-
             <div className={clsx(styles.links)}>
               <ul>
                 <li>

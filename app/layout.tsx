@@ -24,9 +24,6 @@ export const metadata: Metadata = {
 
   description:
     "I am a frontend developer with a passion for creating responsive and dynamic user interfaces using React and other web technologies",
-  verification: {
-    google: "zWne5ULETfErpQuBYsnvJQ-ngJ0QCI5w6Zlbb6mwZuI",
-  },
 };
 
 export default function RootLayout({
